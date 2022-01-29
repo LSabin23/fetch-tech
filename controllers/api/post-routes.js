@@ -92,7 +92,7 @@ router.post('/', withAuth, (req, res) => {
 })
 
 // PUT /:id
-// update a post (dashboard route?)
+// update a post
 // authguard
 router.put('/:id', withAuth, (req, res) => {
   Post.update(
@@ -120,7 +120,7 @@ router.put('/:id', withAuth, (req, res) => {
 })
 
 // DELETE /:id
-// delete a post (dashboard route?)
+// delete a post
 // authguard
 router.delete('/:id', withAuth, (req, res) => {
   Post.destroy({
