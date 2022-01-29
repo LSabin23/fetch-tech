@@ -40,6 +40,13 @@ router.get('/', (req, res) => {
 
 // GET /login
 // redirect to login/homepage
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/')
+    return
+  }
+  res.render('login')
+})
 
 // GET /post/:id
 // get post by id to render single-post page
