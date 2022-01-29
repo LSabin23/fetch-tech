@@ -1,18 +1,10 @@
-<section>
-  <h2>Create New Post</h2>
+{{#unless posts.length}}
+  <p>It looks like you don't have any posts yet. Click "New Post" to add one!</p>
+{{/unless}}
 
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title"/>
-    </div>
-    <div class="post-content">
-      <label for="post-content">Content</label>
-      <input type="text" id="post-content" name="post-content"/>
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section>
+<div>
+  <button type="submit" id="new-post-btn" class="btn">New Post</button>
+</div>
 
 {{#if posts.length}}
 <section>
@@ -28,5 +20,4 @@
 </section>
 {{/if}}
 
-<script src="/javascript/add-post.js"></script>
-
+<script src="/javascript/new-post.js"></script>

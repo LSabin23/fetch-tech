@@ -47,6 +47,16 @@ router.get('/', withAuth, (req, res) => {
     })
 })
 
+// GET /new-post
+// render new-post template
+// authguard to prevent non-logged in users from creating new posts
+router.get('/new-post', withAuth, (req, res) => {
+  res.render('new-post', {
+    loggedIn: true,
+    username: req.session.username
+  })
+})
+
 // GET /edit/:id
 // authguard
 // get one post then render edit-post template
