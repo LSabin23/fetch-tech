@@ -8,6 +8,7 @@
     <p>{{content}}</p>
   </div>
   <div class="meta">
+    {{!-- keep link to individual post here because content and title are already visualized --}}
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
   </div>
 </article>
