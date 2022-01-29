@@ -13,7 +13,7 @@ _App Sample Screenshots_
 
 ### Access
 
-Check out the live deployed site [here](DEPLOYED SITE LINK)
+Check out the live deployed site [here](https://tranquil-spire-73034.herokuapp.com/).
 
 Alternatively, clone the repository, login to MySQL Shell and run source db/schema.sql to set up the database then run npm start.
 
