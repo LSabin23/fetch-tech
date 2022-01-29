@@ -6,9 +6,9 @@ const session = require('express-session')
 // set up session store by requiring npm module connect-session-sequelize and passing through express session.Store property
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
 const exphbs = require('express-handlebars')
-// const helpers = require('./utils/helpers')
-const hbs = exphbs.create({})
-// const hbs = exphbs.create({ helpers })
+const helpers = require('./utils/helpers')
+// const hbs = exphbs.create({})
+const hbs = exphbs.create({ helpers })
 
 // make session object
 const sess = {
