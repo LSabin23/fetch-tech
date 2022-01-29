@@ -165,13 +165,16 @@ main {
   width: 300px;
 }
 
-.post-content input {
-  min-width: 50%;
-  min-height: 100px
-}
-
 .edit-post-form {
   margin-bottom: 5%;
+}
+
+.edit-post-form input {
+  width: 300px
+}
+
+.post-content input {
+  min-width: 40%
 }
 
 footer {
