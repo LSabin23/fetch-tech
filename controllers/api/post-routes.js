@@ -78,7 +78,7 @@ router.get('/:id', (req, res) => {
 // POST /api/posts
 // create new post
 // authguard
-router.post('/', (req, res) => {
+router.post('/', withAuth, (req, res) => {
   Post.create({
     title: req.body.title,
     content: req.body.content,
