@@ -17,7 +17,7 @@ const sess = {
   // cookie object used by session
   // maxAge property will expire the cookie after the set number of milliseconds has passed, 300000 milliseconds is equivalent to 5 minutes
   // test with 10000
-  cookie: { maxAge: 10000 },
+  cookie: { maxAge: 300000 },
   // resave forces session to be saved back to session store even if cookie hasn't been modified, true default deprecated, recommended false
   resave: false,
   // new sessions are saved as part of the store
